@@ -1,0 +1,25 @@
+// Write a Java Program to find if a number is positive or negative
+
+import java.util.Scanner;
+public class PositiveNegative {
+	void posorneg(int a)
+	{
+		if(a<0)
+		{
+			System.out.println(a+" is a negative number");
+		}
+		else
+		{
+			System.out.println(a+" is a positive number");
+		}
+	}
+	public static void main(String[] args) {
+		PositiveNegative pn = new PositiveNegative();
+		Scanner sc = new Scanner(System.in);
+		int a;
+		System.out.println("Enter a number ");
+		a = sc.nextInt();
+		pn.posorneg(a);
+	}
+	
+}
